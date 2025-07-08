@@ -134,7 +134,7 @@ export class AttachmentDownloadView extends View {
       );
       this.downloadButton.on('click', e => e.stopPropagation());
       $('#attachment-container').on('click', async () => {
-        if ($('#attachment-container').attr('id') !== 'attachment-preview' && !$('#attachment-container').hasClass('error-occured')) {
+        if ($('#attachment-container').attr('id') !== 'attachment-preview' && !$('#attachment-container').hasClass('error-occurred')) {
           await this.previewAttachmentClickedHandler();
         }
       });
@@ -190,7 +190,7 @@ export class AttachmentDownloadView extends View {
       Catch.reportErr(e);
       Xss.sanitizeRender('body', `Error downloading file - ${Xss.escape(String(e))}. ${Ui.retryLink()}`); // xss-escaped
     }
-    $('body').addClass('error-occured').attr('title', '');
+    $('body').addClass('error-occurred').attr('title', '');
   };
 
   private renderHeader = () => {
@@ -351,7 +351,7 @@ export class AttachmentDownloadView extends View {
         .html(
           `<div>Failed to decrypt:</div><a href="#" data-test="decrypt-error-details" class="see-error-details">see error details</a><br><div>Downloading original…`
         ) // xss-escaped
-        .addClass('error-occured')
+        .addClass('error-occurred')
         .attr('title', '');
       $('.see-error-details').on('click', async () => {
         await this.previewAttachmentClickedHandler(true);
