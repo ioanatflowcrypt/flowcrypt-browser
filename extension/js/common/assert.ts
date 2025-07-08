@@ -70,7 +70,7 @@ export class Assert {
     if (!kis.length) {
       const msg = `Cannot find any account key. Is FlowCrypt not set up yet? ${Ui.retryLink()}`;
       const target = $($('#content').length ? '#content' : 'body');
-      target.addClass('error-occured');
+      target.addClass('error-occurred');
       Xss.sanitizeRender(target, msg);
       if (doThrow) {
         throw new AssertError(msg);

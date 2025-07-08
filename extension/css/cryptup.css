@@ -2844,8 +2844,8 @@ body#new_message {
   overflow-y: hidden;
 }
 
-body#new_message.error-occured,
-body#settings > div#content.error-occured {
+body#new_message.error-occurred,
+body#settings > div#content.error-occurred {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3051,7 +3051,7 @@ table#compose #error_container_reply_message #error_text_reply_message {
   border-color: #eaeaea;
 }
 
-#attachment-container.error-occured {
+#attachment-container.error-occurred {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3156,7 +3156,7 @@ table#compose #error_container_reply_message #error_text_reply_message {
   overflow-y: hidden;
 }
 
-#attachment-preview.error-occured {
+#attachment-preview.error-occurred {
   align-items: center;
   justify-content: center;
   font-size: 18px;
@@ -3164,11 +3164,11 @@ table#compose #error_container_reply_message #error_text_reply_message {
   line-height: 2;
 }
 
-#attachment-preview.error-occured summary {
+#attachment-preview.error-occurred summary {
   text-align: center;
 }
 
-#attachment-preview.error-occured pre {
+#attachment-preview.error-occurred pre {
   max-width: 96vw;
   max-height: 70vh;
   overflow: auto;
